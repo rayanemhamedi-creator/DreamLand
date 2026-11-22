@@ -15,19 +15,14 @@ const searchHotels = async (params) => {
   return response.data;
 };
 
-const creerHotel = async (hotelData) => {
-  return await api.post('/hotels', hotelData);
-};
-
 const getFormulesHotel = async (hotelId) => {
-    const response = await api.get(`/hotels/${hotelId}/formules`);
-    return response.data;
+  const response = await api.get(`/hotels/${hotelId}/formules`);
+  return response.data;
 };
 
 const hotelService = {
   getTousLesHotels,
   getHotelParId,
-  creerHotel,
   getFormulesHotel,
   searchHotels
 };

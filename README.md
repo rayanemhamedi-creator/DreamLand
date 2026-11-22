@@ -1,48 +1,14 @@
-# 🌴 DreamLand – Tourism Booking Platform
+> Why do I have a folder named ".expo" in my project?
 
-**Discover Djerba, Explore More.**
+The ".expo" folder is created when an Expo project is started using "expo start" command.
 
-DjerbaTour is a web and mobile tourism platform designed to help visitors discover and enjoy the island of Djerba, Tunisia. It provides a centralized solution for discovering tourist services, organizing trips, making reservations and planning personalized travel experiences.
+> What do the files contain?
 
-## ✨ Key Features
+- "devices.json": contains information about devices that have recently opened this project. This is used to populate the "Development sessions" list in your development builds.
+- "settings.json": contains the server configuration that is used to serve the application manifest.
+- "dev/logs/": contains structured JSONL event logs from CLI commands (e.g. start.log, export.log). These are truncated on each run.
 
-- 🏨 **Hotel Reservations:** Discover hotels and book rooms.
-- 🍽️ **Restaurant & Café Reservations:** Explore restaurants, cafés and reserve tables.
-- 🎬 **Cinema:** Discover movies and book tickets.
-- 🏄 **Sports Activities:** Discover and book sports activities and equipment.
-- 🧭 **Guided Tours:** Explore Djerba through guided excursions.
-- 🤖 **AI Travel Assistant:** Get personalized travel itineraries and recommendations using Gemini AI.
-- 💳 **Online Payments:** Secure online payments powered by Stripe.
+> Should I commit the ".expo" folder?
 
-## 🛠️ Technologies Used
-
-| Technology | Purpose |
-|---|---|
-| Spring Boot | Backend Development |
-| React | Web Frontend |
-| React Native | Mobile Application |
-| Stripe | Online Payment Integration |
-| Gemini AI | AI-powered Recommendations |
-
-## 🎯 Project Objectives
-
-- Simplify the tourist experience in Djerba.
-- Centralize tourism services on one platform.
-- Facilitate online reservations and payments.
-- Provide personalized travel recommendations using Artificial Intelligence.
-- Promote tourism and local businesses in Djerba.
-
-## 📸 Project Preview
-
-Screenshots and a demonstration of the platform will be added here.
-
-## 👨‍💻 Project Information
-
-**Project Name:** DjerbaTour  
-**Domain:** Tourism & Travel Technology  
-**Location:** Djerba, Tunisia  
-**Project Type:** Web & Mobile Application
-
----
-
-*DjerbaTour – Discover Djerba, Your Way.* 🌴
+No, you should not share the ".expo" folder. It does not contain any information that is relevant for other developers working on the project, it is specific to your machine.
+Upon project creation, the ".expo" folder is already added to your ".gitignore" file.

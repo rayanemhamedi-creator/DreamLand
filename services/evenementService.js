@@ -20,7 +20,6 @@ const searchCinemas = async (params) => {
     return response.data;
 };
 
-
 const getTousLesSorties = async () => {
     const response = await api.get('/sorties');
     return response.data;
@@ -31,6 +30,16 @@ const getTousLesSports = async () => {
     return response.data;
 };
 
+const getFilmsParCinema = async (cinemaId) => {
+    const response = await api.get(`/films/cinema/${cinemaId}`);
+    return response.data;
+};
+
+const getMaterielsParSport = async (sportId) => {
+    const response = await api.get(`/sports/${sportId}/materiels`);
+    return response.data;
+};
+
 const evenementService = {
   getTousLesEvenements,
   getTousLesCinemas,
@@ -38,6 +47,8 @@ const evenementService = {
   getTousLesFilms,
   getTousLesSorties,
   getTousLesSports,
+  getFilmsParCinema,
+  getMaterielsParSport,
 };
 
 export default evenementService;
