@@ -1,0 +1,31 @@
+.language-selector .dropdown-menu {
+    border-radius: 12px;
+    min-width: 180px;
+    margin-top: 10px !important;
+    animation: fadeInDown 0.2s ease-out;
+}
+
+.language-selector .dropdown-item {
+    transition: all 0.2s ease;
+}
+
+.language-selector .dropdown-item:hover {
+    background-color: rgba(249, 115, 22, 0.1);
+    color: #f97316;
+}
+
+.language-selector .dropdown-item.active {
+    background-color: #f97316;
+    color: white;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
