@@ -1,0 +1,11 @@
+package djerbatourb.djerbatourb.repository;
+
+import djerbatourb.djerbatourb.entity.Admin;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import java.util.Optional;
+
+@Repository
+public interface AdminRepository extends JpaRepository<Admin, Long> {
+    Optional<Admin> findByUtilisateurId(Long utilisateurId);
+}
